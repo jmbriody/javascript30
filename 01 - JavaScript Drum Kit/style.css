@@ -1,6 +1,10 @@
+* {
+
+}
+
 html {
   font-size: 10px;
-  background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
+  background: url(declan.jpg);
   background-size: cover;
 }
 
@@ -10,12 +14,23 @@ body,html {
   font-family: sans-serif;
 }
 
-.keys {
+.stacked {
+  min-height: 800px;
   display: flex;
-  flex: 1;
-  min-height: 100vh;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  box-align: center;
+}
+
+.keys {
+  .margin: 1em;
+  display: flex;
+/*  align-items: center;
+  justify-content: center;
+  */
+  /* flex: 1; */
+  flex-direction: row;
 }
 
 .key {
@@ -24,8 +39,8 @@ body,html {
   margin: 1rem;
   font-size: 1.5rem;
   padding: 1rem .5rem;
-  transition: all .07s ease;
-  width: 10rem;
+  transition: all .17s ease;
+  width: 9rem;
   text-align: center;
   color: white;
   background: rgba(0,0,0,0.4);
@@ -33,7 +48,7 @@ body,html {
 }
 
 .playing {
-  transform: scale(1.1);
+  transform: scale(1.8);
   border-color: #ffc600;
   box-shadow: 0 0 1rem #ffc600;
 }
